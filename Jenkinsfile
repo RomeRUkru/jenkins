@@ -16,16 +16,16 @@ pipeline {
                 '''
             }
         }
-        stage("TEST PARALLEL") {
+        stage("TEST parallel") {
             parallel{
             stage('Test shell - First') {
                 steps {
-                    sh "ls -la"
+                    echo "fist parallel step"
                 }
             }
             stage('Test shell - Second') {
                 steps {
-                    sh "pwd"
+                    echo "2nd parallel step"
                 }
             }
             }

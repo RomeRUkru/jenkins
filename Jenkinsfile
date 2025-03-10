@@ -16,7 +16,7 @@ pipeline {
                 '''
             }
         }
-        stage("TEST SHELL") {
+        stage("TEST PARALLEL") {
             parallel{
             stage('Test shell - First') {
                 steps {

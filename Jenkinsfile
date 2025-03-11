@@ -30,10 +30,15 @@ pipeline {
             }
             }
         }
-    stage('Bye, Bye') {
-        steps {
-            echo 'Bye World'
+        stage('test webhook') {
+            steps {
+                echo 'if u see this text - webhook - work! win)))'
+            }
         }
-    }
+        stage('Bye, Bye') {
+            steps {
+                echo 'Bye World'
+            }
+        }
     }
 }
